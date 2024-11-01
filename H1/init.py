@@ -1,6 +1,7 @@
 course_id = 'network-dynamics'
 github_repo = 'MateoRivera/%s' % course_id
-zip_file_url = f"https://github.com/{github_repo}/archive/master.zip"
+zip_file_url = f"https://github.com/{github_repo}/archive/refs/heads/main.zip"
+
 
 
 def get_last_modif_date(localdir):
