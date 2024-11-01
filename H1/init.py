@@ -1,6 +1,6 @@
 course_id = 'network-dynamics'
 github_repo = 'MateoRivera/%s' % course_id
-zip_file_url = f"https://github.com/{github_repo}/archive/refs/heads/main.zip"
+zip_file_url = "https://github.com/MateoRivera/network-dynamics/archive/refs/heads/main.zip"
 
 
 
