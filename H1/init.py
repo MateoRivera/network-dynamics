@@ -20,15 +20,15 @@ import requests, zipfile, io, os, shutil
 
 
 def init(force_download=False):
-    if force_download or not os.path.exists("local"):
+    if force_download or not os.path.exists("resources"):
         print("replicating local resources")
-        dirname = course_id + "-main/H1/resources"
+        dirname = course_id + "-main/H1"
         if os.path.exists(dirname):
             shutil.rmtree(dirname)
         r = requests.get(zip_file_url)
         z = zipfile.ZipFile(io.BytesIO(r.content))
         z.extractall()
-        if os.path.exists("local"):
-            shutil.rmtree("local")
-        shutil.move(dirname + "/local", "local")
+        if os.path.exists("resources"):
+            shutil.rmtree("resources")
+        shutil.move(dirname + "/resources", "resources")
         shutil.rmtree(dirname)
