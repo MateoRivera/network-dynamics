@@ -1,0 +1,4 @@
+Point b: 
+The largest input rate that the system can handle without blowing up is proportional to the 
+
+Now, the system will no longer adjust itself to meet all the demand; instead, each node will operate within the agreed time, regardless of the number of particles accumulated in it. This explains why, at node 0, the accumulation of particles continuously increases—the more particles enter the system, the more congestion occurs. Consequently, node 0 becomes a bottleneck in the system, representing the new capacity constraint.
